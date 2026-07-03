@@ -38,30 +38,30 @@ const productCategories = [
 ];
 
 const productPresetImages = [
-  'assets/images/tool_drill.png',
-  'assets/images/tool_hammer.png',
-  'assets/images/tool_set.png',
-  'assets/images/tool_level.png',
-  'assets/images/shop_grinder.png',
-  'assets/images/shop_saw.png',
-  'assets/images/shop_perforator.png',
-  'assets/images/shop_washer.png',
-  'assets/images/shop_jigsaw.png',
-  'assets/images/shop_flashlight.png',
+  'assets/images/tool_drill.webp',
+  'assets/images/tool_hammer.webp',
+  'assets/images/tool_set.webp',
+  'assets/images/tool_level.webp',
+  'assets/images/shop_grinder.webp',
+  'assets/images/shop_saw.webp',
+  'assets/images/shop_perforator.webp',
+  'assets/images/shop_washer.webp',
+  'assets/images/shop_jigsaw.webp',
+  'assets/images/shop_flashlight.webp',
 ];
 
 const masterPresetAvatars = [
-  'assets/images/master_1.png',
-  'assets/images/master_2.png',
-  'assets/images/master_3.png',
-  'assets/images/master_4.png',
-  'assets/images/master_5.png',
-  'assets/images/master_6.png',
-  'assets/images/master_7.png',
-  'assets/images/master_8.png',
-  'assets/images/master_9.png',
-  'assets/images/master_10.png',
-  'assets/images/master_11.png',
+  'assets/images/master_1.webp',
+  'assets/images/master_2.webp',
+  'assets/images/master_3.webp',
+  'assets/images/master_4.webp',
+  'assets/images/master_5.webp',
+  'assets/images/master_6.webp',
+  'assets/images/master_7.webp',
+  'assets/images/master_8.webp',
+  'assets/images/master_9.webp',
+  'assets/images/master_10.webp',
+  'assets/images/master_11.webp',
 ];
 
 const masterSpecializations = [

@@ -3,6 +3,7 @@ import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../core/widgets/feedback/skeleton_loader.dart';
 import '../../chat/presentation/chat_thread_screen.dart';
 import '../../chat/providers/chat_provider.dart';
 import '../../home/presentation/home_palette.dart';
@@ -17,7 +18,12 @@ class ChatsListPage extends ConsumerWidget {
     final chatsAsync = ref.watch(conversationsProvider);
 
     return chatsAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
+      loading: () => ListView.separated(
+        padding: const EdgeInsets.all(16),
+        itemCount: 6,
+        separatorBuilder: (_, __) => const SizedBox(height: 8),
+        itemBuilder: (_, __) => const SkeletonListCard(),
+      ),
       error: (_, __) => Center(
         child: Text('Чаты недоступны', style: GoogleFonts.inter(color: p.muted)),
       ),

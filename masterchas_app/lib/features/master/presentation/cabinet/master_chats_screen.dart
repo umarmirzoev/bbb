@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/master_palette.dart';
+import '../../../../core/widgets/feedback/skeleton_loader.dart';
 import '../../../chat/models/api_conversation.dart';
 import '../../../chat/presentation/chat_thread_screen.dart';
 import '../../../chat/providers/chat_provider.dart';
@@ -19,7 +20,11 @@ class MasterChatsScreen extends ConsumerWidget {
     return MasterCabinetShell(
       title: 'Сообщения',
       child: chats.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => ListView.builder(
+          padding: const EdgeInsets.all(16),
+          itemCount: 6,
+          itemBuilder: (_, __) => const SkeletonListCard(),
+        ),
         error: (e, _) => Center(child: Text('$e')),
         data: (items) => items.isEmpty
             ? const _EmptyState()

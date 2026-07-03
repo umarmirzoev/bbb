@@ -324,7 +324,7 @@ class PlatformStoreNotifier extends Notifier<PlatformStoreState> {
 
   // ─── Clients ──────────────────────────────────────────────────────────────
 
-  void addClient({required String name, required String phone, String avatar = 'assets/images/master_1.png'}) {
+  void addClient({required String name, required String phone, String avatar = 'assets/images/master_1.webp'}) {
     final id = 'cl-${state.nextClientId}';
     state = state.copyWith(
       nextClientId: state.nextClientId + 1,

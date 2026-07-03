@@ -405,7 +405,7 @@ class _AiPickCard extends StatelessWidget {
           SizedBox(
             width: 84,
             height: 84,
-            child: Image.asset('assets/images/home_ai_robot.png', fit: BoxFit.contain),
+            child: Image.asset('assets/images/home_ai_robot.webp', fit: BoxFit.contain),
           ),
         ],
       ),
@@ -524,10 +524,12 @@ class _Photo extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          if (m.imageBytes != null)
-            Image.memory(m.imageBytes!, fit: BoxFit.cover, alignment: Alignment.topCenter)
-          else
-            Image.asset(m.image, fit: BoxFit.cover, alignment: Alignment.topCenter),
+          Hero(
+            tag: 'master-photo-${m.phone}',
+            child: m.imageBytes != null
+                ? Image.memory(m.imageBytes!, fit: BoxFit.cover, alignment: Alignment.topCenter)
+                : Image.asset(m.image, fit: BoxFit.cover, alignment: Alignment.topCenter),
+          ),
           if (m.isOnline)
             Positioned(
               left: 8,
@@ -692,9 +694,9 @@ class _MiniAvatars extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const imgs = [
-      'assets/images/master_1.png',
-      'assets/images/master_2.png',
-      'assets/images/master_3.png',
+      'assets/images/master_1.webp',
+      'assets/images/master_2.webp',
+      'assets/images/master_3.webp',
     ];
     return SizedBox(
       width: 52,

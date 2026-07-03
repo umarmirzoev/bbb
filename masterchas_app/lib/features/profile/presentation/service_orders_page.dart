@@ -3,6 +3,8 @@ import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../core/widgets/badges/status_badge.dart';
+import '../../../core/widgets/feedback/skeleton_loader.dart';
 import '../../home/presentation/home_palette.dart';
 import '../../orders/models/api_order.dart';
 import '../../orders/providers/orders_provider.dart';
@@ -20,7 +22,12 @@ class ServiceOrdersPage extends ConsumerWidget {
     return ProfileSubPage(
       title: 'Мои заказы',
       body: ordersAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => ListView.separated(
+          padding: const EdgeInsets.all(16),
+          itemCount: 5,
+          separatorBuilder: (_, __) => const SizedBox(height: 10),
+          itemBuilder: (_, __) => const SkeletonListCard(),
+        ),
         error: (_, __) => Center(
           child: Text('Не удалось загрузить заказы', style: GoogleFonts.inter(color: p.muted)),
         ),
@@ -98,18 +105,7 @@ class _StatusChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final resolved = resolveOrderStatus(status);
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      decoration: BoxDecoration(
-        color: resolved.color.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Text(
-        resolved.label,
-        style: GoogleFonts.inter(fontSize: 11, fontWeight: FontWeight.w700, color: resolved.color),
-      ),
-    );
+    final resolved = resolveOrderStatusTone(status);
+    return StatusBadge(label: resolved.label, tone: resolved.tone, dense: true);
   }
 }

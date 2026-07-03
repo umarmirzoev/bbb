@@ -8,6 +8,7 @@ import 'package:flutter_lucide/flutter_lucide.dart';
 
 import '../../../core/config/app_flow_config.dart';
 import '../../../core/providers/splash_completed_provider.dart';
+import '../../../core/theme/app_gradients.dart';
 import '../../auth/providers/auth_provider.dart';
 
 /// Exact green from splash reference image.
@@ -268,7 +269,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
 
     return Scaffold(
       backgroundColor: splashBackground,
-      body: FadeTransition(
+      body: DecoratedBox(
+        // Living gradient instead of a single flat green — matches the
+        // gradient identity used across CTAs and hero cards app-wide.
+        decoration: const BoxDecoration(gradient: AppGradients.splash),
+        child: FadeTransition(
         opacity: Tween<double>(begin: 1, end: 0).animate(
           CurvedAnimation(parent: _exitController, curve: Curves.easeInOut),
         ),
@@ -355,6 +360,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
           ],
             ),
           ),
+        ),
         ),
       ),
     );

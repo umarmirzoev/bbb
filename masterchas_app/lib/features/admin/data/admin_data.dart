@@ -116,11 +116,11 @@ final initialAdminOrders = <AdminOrder>[
 ];
 
 final initialAdminMasters = <AdminMaster>[
-  const AdminMaster(id: 'm1', name: 'Гулмахмад Давлатов', avatar: 'assets/images/master_1.png', specialization: 'Сантехник', orders: 124, rating: 4.9, income: 45200, status: AdminMasterStatus.top, phone: '+992 90 123 4567'),
-  const AdminMaster(id: 'm2', name: 'Фаррух Саидов', avatar: 'assets/images/master_2.png', specialization: 'Электрик', orders: 98, rating: 4.8, income: 38100, status: AdminMasterStatus.active, phone: '+992 91 234 5678'),
-  const AdminMaster(id: 'm3', name: 'Рустам Алиев', avatar: 'assets/images/master_3.png', specialization: 'Отделочник', orders: 76, rating: 4.7, income: 52800, status: AdminMasterStatus.active, phone: '+992 92 345 6789'),
-  const AdminMaster(id: 'm4', name: 'Шахло Мирзоева', avatar: 'assets/images/master_4.png', specialization: 'Уборка', orders: 45, rating: 4.6, income: 18900, status: AdminMasterStatus.pending, phone: '+992 93 456 7890'),
-  const AdminMaster(id: 'm5', name: 'Ибрагим К.', avatar: 'assets/images/master_5.png', specialization: 'Мебельщик', orders: 12, rating: 3.2, income: 4200, status: AdminMasterStatus.blocked, phone: '+992 94 567 8901'),
+  const AdminMaster(id: 'm1', name: 'Гулмахмад Давлатов', avatar: 'assets/images/master_1.webp', specialization: 'Сантехник', orders: 124, rating: 4.9, income: 45200, status: AdminMasterStatus.top, phone: '+992 90 123 4567'),
+  const AdminMaster(id: 'm2', name: 'Фаррух Саидов', avatar: 'assets/images/master_2.webp', specialization: 'Электрик', orders: 98, rating: 4.8, income: 38100, status: AdminMasterStatus.active, phone: '+992 91 234 5678'),
+  const AdminMaster(id: 'm3', name: 'Рустам Алиев', avatar: 'assets/images/master_3.webp', specialization: 'Отделочник', orders: 76, rating: 4.7, income: 52800, status: AdminMasterStatus.active, phone: '+992 92 345 6789'),
+  const AdminMaster(id: 'm4', name: 'Шахло Мирзоева', avatar: 'assets/images/master_4.webp', specialization: 'Уборка', orders: 45, rating: 4.6, income: 18900, status: AdminMasterStatus.pending, phone: '+992 93 456 7890'),
+  const AdminMaster(id: 'm5', name: 'Ибрагим К.', avatar: 'assets/images/master_5.webp', specialization: 'Мебельщик', orders: 12, rating: 3.2, income: 4200, status: AdminMasterStatus.blocked, phone: '+992 94 567 8901'),
 ];
 
 final initialAdminClients = <AdminClient>[
