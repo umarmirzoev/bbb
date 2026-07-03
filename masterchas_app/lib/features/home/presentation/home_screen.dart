@@ -884,7 +884,7 @@ class _AiCard extends StatelessWidget {
                 top: 22,
                 bottom: 18,
                 child: Image.asset(
-                  'assets/images/home_ai_robot.png',
+                  'assets/images/home_ai_robot.webp',
                   fit: BoxFit.contain,
                 ),
               ),
@@ -1005,7 +1005,7 @@ class _MasterCard extends StatelessWidget {
                 bottom: 0,
                 top: 6,
                 child: Image.asset(
-                  'assets/images/home_handyman.png',
+                  'assets/images/home_handyman.webp',
                   fit: BoxFit.contain,
                 ),
               ),
@@ -1204,7 +1204,7 @@ class _DiscountBanner extends StatelessWidget {
             bottom: 0,
             width: 130,
             child: Image.asset(
-              'assets/images/home_cleaner.png',
+              'assets/images/home_cleaner.webp',
               fit: BoxFit.cover,
               alignment: Alignment.centerRight,
             ),
@@ -1852,7 +1852,7 @@ class _AiBigBanner extends StatelessWidget {
                   borderRadius: BorderRadius.circular(14),
                 ),
                 clipBehavior: Clip.antiAlias,
-                child: Image.asset('assets/images/home_ai_robot.png', fit: BoxFit.cover),
+                child: Image.asset('assets/images/home_ai_robot.webp', fit: BoxFit.cover),
               ),
               const SizedBox(width: 12),
               Expanded(
@@ -2025,10 +2025,10 @@ class _ToolsShop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final products = <_ProductData>[
-      _ProductData(name: s.prodDrill, image: 'assets/images/tool_drill.png', price: 520),
-      _ProductData(name: s.prodHammer, image: 'assets/images/tool_hammer.png', price: 120),
-      _ProductData(name: s.prodToolSet, image: 'assets/images/tool_set.png', price: 290),
-      _ProductData(name: s.prodLevel, image: 'assets/images/tool_level.png', price: 85),
+      _ProductData(name: s.prodDrill, image: 'assets/images/tool_drill.webp', price: 520),
+      _ProductData(name: s.prodHammer, image: 'assets/images/tool_hammer.webp', price: 120),
+      _ProductData(name: s.prodToolSet, image: 'assets/images/tool_set.webp', price: 290),
+      _ProductData(name: s.prodLevel, image: 'assets/images/tool_level.webp', price: 85),
     ];
 
     return Column(
@@ -2232,7 +2232,7 @@ class _DiscountBanner2 extends StatelessWidget {
             top: 0,
             bottom: 0,
             width: 150,
-            child: Image.asset('assets/images/home_cleaner.png', fit: BoxFit.cover),
+            child: Image.asset('assets/images/home_cleaner.webp', fit: BoxFit.cover),
           ),
           Container(
             decoration: BoxDecoration(
@@ -2344,7 +2344,7 @@ class _AllToolsCard extends StatelessWidget {
               SizedBox(
                 width: 96,
                 height: 70,
-                child: Image.asset('assets/images/toolbox.png', fit: BoxFit.contain),
+                child: Image.asset('assets/images/toolbox.webp', fit: BoxFit.contain),
               ),
             ],
           ),

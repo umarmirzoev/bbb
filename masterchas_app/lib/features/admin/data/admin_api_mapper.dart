@@ -22,7 +22,7 @@ SaClient adminClientToSa(AdminClient client) => SaClient(
       id: client.id,
       name: client.name,
       phone: client.phone,
-      avatar: 'assets/images/master_1.png',
+      avatar: 'assets/images/master_1.webp',
       date: client.joined,
       isNew: client.orders <= 1,
       orders: client.orders,
@@ -33,7 +33,7 @@ SaClient adminClientToSa(AdminClient client) => SaClient(
 SaMaster adminMasterToSa(AdminMaster master) {
   final avatar = master.avatar.startsWith('assets/')
       ? master.avatar
-      : 'assets/images/master_1.png';
+      : 'assets/images/master_1.webp';
   return SaMaster(
     id: master.id,
     name: master.name,

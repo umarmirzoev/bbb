@@ -405,7 +405,7 @@ class _AiPickCard extends StatelessWidget {
           SizedBox(
             width: 84,
             height: 84,
-            child: Image.asset('assets/images/home_ai_robot.png', fit: BoxFit.contain),
+            child: Image.asset('assets/images/home_ai_robot.webp', fit: BoxFit.contain),
           ),
         ],
       ),
@@ -694,9 +694,9 @@ class _MiniAvatars extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const imgs = [
-      'assets/images/master_1.png',
-      'assets/images/master_2.png',
-      'assets/images/master_3.png',
+      'assets/images/master_1.webp',
+      'assets/images/master_2.webp',
+      'assets/images/master_3.webp',
     ];
     return SizedBox(
       width: 52,

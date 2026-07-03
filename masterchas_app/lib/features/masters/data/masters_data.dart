@@ -153,7 +153,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Гулмахмад Давлатов',
     phone: '+992 900 11 22 33',
-    image: 'assets/images/master_4.png',
+    image: 'assets/images/master_4.webp',
     bio: 'Специалист по сантехнике и электрике. Гипрозем и весь район Сино.',
     categories: ['Сантехника', 'Электрика'],
     districts: ['Сино'],
@@ -169,7 +169,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Фаррух Каримов',
     phone: '+992 900 22 33 44',
-    image: 'assets/images/master_5.png',
+    image: 'assets/images/master_5.webp',
     bio: 'Электрика любой сложности, установка систем «Умный дом» в Зарафшоне.',
     categories: ['Электрика', 'Умный дом'],
     districts: ['Сино'],
@@ -185,7 +185,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Камол Камолов',
     phone: '+992 900 33 44 55',
-    image: 'assets/images/master_6.png',
+    image: 'assets/images/master_6.webp',
     bio: 'Сварочные работы и металлоконструкции. Шохмансур.',
     categories: ['Сварочные работы', 'Отделка'],
     districts: ['Шохмансур'],
@@ -201,7 +201,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Рустам Раджабов',
     phone: '+992 900 44 55 66',
-    image: 'assets/images/master_7.png',
+    image: 'assets/images/master_7.webp',
     bio: 'Опытный сантехник. Отопление, водоснабжение, канализация.',
     categories: ['Сантехника', 'Отопление'],
     districts: ['Фирдавси'],
@@ -217,7 +217,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Алишер Азизов',
     phone: '+992 900 55 66 77',
-    image: 'assets/images/master_8.png',
+    image: 'assets/images/master_8.webp',
     bio: 'Монтаж и обслуживание кондиционеров. Фирдавси.',
     categories: ['Кондиционеры', 'Отопление'],
     districts: ['Фирдавси'],
@@ -233,7 +233,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Далер Сафаров',
     phone: '+992 900 66 77 88',
-    image: 'assets/images/master_9.png',
+    image: 'assets/images/master_9.webp',
     bio: 'Профессиональная уборка и химчистка мебели в Сино.',
     categories: ['Уборка'],
     districts: ['Сино'],
@@ -249,7 +249,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Комрон Набиев',
     phone: '+992 900 77 88 99',
-    image: 'assets/images/master_10.png',
+    image: 'assets/images/master_10.webp',
     bio: 'Видеонаблюдение и домофоны. Район Исмоили Сомони.',
     categories: ['Видеонаблюдение', 'Электрика'],
     districts: ['Исмоили Сомони'],
@@ -265,7 +265,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Шохин Абдуллоев',
     phone: '+992 900 88 99 00',
-    image: 'assets/images/master_11.png',
+    image: 'assets/images/master_11.webp',
     bio: 'Сборка мебели, установка межкомнатных дверей. Шохмансур.',
     categories: ['Мебель и двери'],
     districts: ['Шохмансур'],
@@ -281,7 +281,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Джамшед Хакимов',
     phone: '+992 900 99 00 11',
-    image: 'assets/images/master_3.png',
+    image: 'assets/images/master_3.webp',
     bio: 'Капитальный ремонт квартир под ключ в Сино.',
     categories: ['Ремонт под ключ', 'Отделка'],
     districts: ['Сино'],
@@ -297,7 +297,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Абдулло Мирзоев',
     phone: '+992 900 00 11 22',
-    image: 'assets/images/master_12.png',
+    image: 'assets/images/master_12.webp',
     bio: 'Мастер по плитке и отделочным работам. Фирдавси.',
     categories: ['Отделка', 'Плитка'],
     districts: ['Фирдавси'],
@@ -313,7 +313,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Юсуф Бобоев',
     phone: '+992 900 11 22 55',
-    image: 'assets/images/master_1.png',
+    image: 'assets/images/master_1.webp',
     bio: 'Мелкий бытовой ремонт, мастер на час в Исмоили Сомони.',
     categories: ['Другие услуги'],
     districts: ['Исмоили Сомони'],
@@ -329,7 +329,7 @@ const masters = <MasterItem>[
   MasterItem(
     fullName: 'Саид Алиев',
     phone: '+992 900 22 33 66',
-    image: 'assets/images/master_2.png',
+    image: 'assets/images/master_2.webp',
     bio: 'Аварийная служба 24/7. Вскрытие замков, сантехника, электрика.',
     categories: ['Аварийные 24/7', 'Электрика', 'Сантехника'],
     districts: ['Сино', 'Фирдавси', 'Шохмансур', 'Исмоили Сомони'],

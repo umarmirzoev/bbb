@@ -505,9 +505,9 @@ class _Promos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cards = <Widget>[
-      _promo(0, const [Color(0xFF2E7D32), Color(0xFF57B55E)], 'assets/images/tool_drill.png', Colors.white, true),
+      _promo(0, const [Color(0xFF2E7D32), Color(0xFF57B55E)], 'assets/images/tool_drill.webp', Colors.white, true),
       _promo(1, [p.cardBg, p.cardBg], null, p.text, false, icon: LucideIcons.truck),
-      _promo(2, const [Color(0xFF1B5E20), Color(0xFF2E7D32)], 'assets/images/shop_mower.png', Colors.white, true),
+      _promo(2, const [Color(0xFF1B5E20), Color(0xFF2E7D32)], 'assets/images/shop_mower.webp', Colors.white, true),
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
