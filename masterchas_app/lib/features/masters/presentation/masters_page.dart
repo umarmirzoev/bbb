@@ -524,10 +524,12 @@ class _Photo extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          if (m.imageBytes != null)
-            Image.memory(m.imageBytes!, fit: BoxFit.cover, alignment: Alignment.topCenter)
-          else
-            Image.asset(m.image, fit: BoxFit.cover, alignment: Alignment.topCenter),
+          Hero(
+            tag: 'master-photo-${m.phone}',
+            child: m.imageBytes != null
+                ? Image.memory(m.imageBytes!, fit: BoxFit.cover, alignment: Alignment.topCenter)
+                : Image.asset(m.image, fit: BoxFit.cover, alignment: Alignment.topCenter),
+          ),
           if (m.isOnline)
             Positioned(
               left: 8,

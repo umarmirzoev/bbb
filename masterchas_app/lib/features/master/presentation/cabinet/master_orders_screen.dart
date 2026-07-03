@@ -4,8 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/master_palette.dart';
+import '../../../../core/widgets/badges/status_badge.dart';
+import '../../../../core/widgets/feedback/skeleton_loader.dart';
 import '../../../orders/models/api_order.dart';
 import '../../../orders/providers/orders_provider.dart';
+import '../../../orders/utils/order_status.dart';
 import 'master_cabinet_shell.dart';
 
 class MasterOrdersScreen extends ConsumerWidget {
@@ -21,7 +24,11 @@ class MasterOrdersScreen extends ConsumerWidget {
     return MasterCabinetShell(
       title: title,
       child: orders.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => ListView.builder(
+          padding: const EdgeInsets.all(16),
+          itemCount: 5,
+          itemBuilder: (_, __) => const SkeletonListCard(),
+        ),
         error: (e, _) => Center(child: Text('$e')),
         data: (items) {
           final filtered = active
@@ -99,6 +106,12 @@ class _OrderTile extends StatelessWidget {
                     fontSize: 13,
                     color: const Color(0xFF6B7280),
                   ),
+                ),
+                const SizedBox(height: 6),
+                StatusBadge(
+                  label: resolveOrderStatusTone(order.status).label,
+                  tone: resolveOrderStatusTone(order.status).tone,
+                  dense: true,
                 ),
               ],
             ),
